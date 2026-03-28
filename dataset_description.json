@@ -1,0 +1,49 @@
+{
+	"Name": "CastillosCVEP100",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-4.0",
+	"Authors": [
+		"Kalou Cabrera Castillos",
+		"Simon Ladouce",
+		"Ludovic Darmet",
+		"Fr\u00e9d\u00e9ric Dehais"
+	],
+	"Funding": [
+		"AID (Powerbrain project), France",
+		"AXA Research Fund Chair for Neuroergonomics, France",
+		"Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
+	],
+	"EthicsApprovals": [
+		"Ethics committee of the University of Toulouse (CER approval number 2020-334)",
+		"Declaration of Helsinki"
+	],
+	"ReferencesAndLinks": [
+		"https://zenodo.org/record/8255618",
+		"10.1016/j.neuroimage.2023.120446"
+	],
+	"DatasetDOI": "doi:10.1016/j.neuroimage.2023.120446",
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "https://doi.org/10.1016/j.neuroimage.2023.120446",
+			"URL": "https://zenodo.org/record/8255618"
+		}
+	],
+	"Keywords": [
+		"Code-VEP",
+		"Reactive BCI",
+		"CNN",
+		"Amplitude depth reduction",
+		"Visual comfort"
+	],
+	"PublicationYear": 2023
+}

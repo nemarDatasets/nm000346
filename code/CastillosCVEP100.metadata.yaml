@@ -1,0 +1,196 @@
+_dataset:
+  class: CastillosCVEP100
+  code: CastillosCVEP100
+  doi: https://doi.org/10.1016/j.neuroimage.2023.120446
+  interval: !!python/tuple
+  - 0
+  - 0.25
+  n_subjects: 12
+  paradigm: cvep
+abstract: The utilization of aperiodic flickering visual stimuli under the form of code-modulated Visual Evoked Potentials
+  (c-VEP) represents a pivotal advancement in the field of reactive Brain–Computer Interface (rBCI). This study introduces
+  an innovative variant of code-VEP, referred to as 'Burst c-VEP', involving the presentation of short bursts of aperiodic
+  visual flashes at a deliberately slow rate, typically ranging from two to four flashes per second. The proposed solutions
+  were tested through an offline 4-classes c-VEP protocol involving 12 participants. The full amplitude burst c-VEP sequences
+  exhibited higher accuracy, ranging from 90.5% (with 17.6 s of calibration data) to 95.6% (with 52.8 s of calibration data),
+  compared to its m-sequence counterpart (71.4% to 85.0%). The mean selection time for both types of codes (1.5 s) compared
+  favorably to reports from previous studies. Lowering the intensity of the stimuli only slightly decreased the accuracy of
+  the burst code sequences to 94.2% while leading to substantial improvements in terms of user experience.
+acquisition:
+  cap_manufacturer: BrainProducts
+  cap_model: Acticap
+  channel_types:
+    eeg: 32
+  electrode_type: active
+  ground: FPz
+  hardware: BrainProducts LiveAmp
+  impedance_threshold_kohm: 25.0
+  line_freq: 50.0
+  montage: standard_1020
+  n_channels: 32
+  reference: FCz
+  sampling_rate: 500.0
+  sensor_type: EEG
+  sensors:
+  - C3
+  - C4
+  - CP1
+  - CP2
+  - CP5
+  - CP6
+  - Cz
+  - F10
+  - F3
+  - F4
+  - F7
+  - F8
+  - F9
+  - FC1
+  - FC2
+  - FC5
+  - FC6
+  - Fp1
+  - Fp2
+  - Fz
+  - O1
+  - O2
+  - Oz
+  - P10
+  - P3
+  - P4
+  - P7
+  - P8
+  - P9
+  - Pz
+  - T7
+  - T8
+bci_application:
+  applications:
+  - reactive BCI
+  environment: laboratory
+cross_validation:
+  cv_method: sequential train/test split
+  evaluation_type:
+  - offline classification
+data_structure:
+  n_blocks: 15
+  n_trials: 60
+  trials_context: 15 blocks × 4 trials (one per target) × 4 conditions (burst/mseq × 100%/40%)
+documentation:
+  associated_paper_doi: 10.1016/j.neuroimage.2023.120446
+  contact_info:
+  - kalou.cabrera-castillos@isae-supaero.fr
+  country: FR
+  data_url: https://zenodo.org/record/8255618
+  description: 4-class code-VEP BCI dataset comparing burst c-VEP and m-sequence stimulation at two amplitude depths (100%
+    and 40%) to optimize performance and user experience
+  doi: 10.1016/j.neuroimage.2023.120446
+  ethics_approval:
+  - Ethics committee of the University of Toulouse (CER approval number 2020-334)
+  - Declaration of Helsinki
+  funding:
+  - AID (Powerbrain project), France
+  - AXA Research Fund Chair for Neuroergonomics, France
+  - Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France
+  institution: Institut Supérieur de l'Aéronautique et de l'Espace (ISAE-SUPAERO)
+  institution_address: 10 Av. Edouard Belin, Toulouse, 31400, France
+  institution_department: Human Factors and Neuroergonomics
+  investigators:
+  - Kalou Cabrera Castillos
+  - Simon Ladouce
+  - Ludovic Darmet
+  - Frédéric Dehais
+  keywords:
+  - Code-VEP
+  - Reactive BCI
+  - CNN
+  - Amplitude depth reduction
+  - Visual comfort
+  license: CC-BY-4.0
+  publication_year: 2023
+  repository: Zenodo
+  senior_author: Frédéric Dehais
+experiment:
+  class_labels:
+  - '0'
+  - '1'
+  events:
+    '0': 100
+    '1': 101
+  feedback_type: none
+  instructions: focus on four targets that were cued sequentially in a random order for 0.5 s, followed by a 2.2 s stimulation
+    phase, before a 0.7 s inter-trial period
+  mode: offline
+  n_classes: 2
+  paradigm: cvep
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    background_luminance: 124 lux (50% screen luminance)
+    brightness: 265 cd/m²
+    cue_duration: 0.5 s
+    display: Dell P2419HC LCD monitor
+    inter_trial_interval: 0.7 s
+    on_state_100: 168 lux (100% amplitude depth)
+    on_state_40: 142 lux (40% amplitude depth)
+    refresh_rate: 60 Hz
+    resolution: 1920×1080 pixels
+    stimulation_duration: 2.2 s
+    stimulus_size: 150 pixels
+  stimulus_type: visual flashing
+  study_design: factorial design (code type × amplitude depth)
+  study_domain: BCI performance and user experience
+  synchronicity: synchronous
+  task_type: visual attention
+  trial_duration: 2.2
+external_links:
+  github_code: https://github.com/neuroergoISAE/burst_codes
+  paper: https://doi.org/10.1016/j.neuroimage.2023.120446
+  source: https://zenodo.org/record/8255618
+file_format: EEGLAB .set
+methodology: 'Factorial experimental design with 12 healthy participants. EEG recorded with BrainProducts LiveAmp 32-channel
+  system at 500 Hz. Four conditions tested: burst c-VEP and m-sequence c-VEP, each at 100% and 40% amplitude depth. Participants
+  focused on cued targets (4 classes) in 15 blocks of 4 trials per condition. CNN-based decoding with 250ms sliding windows.
+  Subjective ratings collected for visual comfort, mental tiredness, and intrusiveness. VEP analysis included amplitude, latency,
+  and inter-trial coherence metrics.'
+paradigm_specific:
+  code_length: 132
+  code_type: m-sequence (maximum-length sequence)
+  detected_paradigm: cvep
+  n_targets: 4
+participants:
+  age_mean: 30.6
+  age_std: 7.1
+  gender:
+    female: 4
+    male: 8
+  health_status: healthy
+  n_subjects: 12
+  species: human
+performance:
+  accuracy_percent: 85.0
+  calibration_data_6blocks_s: 52.8
+  cnn_training_time_6blocks_s: 40.0
+  itr_bits_per_min: 48.7
+  selection_time_s: 1.5
+preprocessing:
+  data_state: raw
+runs_per_session: 1
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Convolutional Neural Network (CNN)
+  feature_extraction:
+  - Sliding windows (250ms, 2ms stride)
+  - Standard deviation normalization
+  spatial_filters:
+  - 16 spatial filters via 1D spatial convolution (8×1 kernel)
+tags:
+  modality:
+  - EEG
+  pathology:
+  - Healthy
+  type:
+  - reactive BCI
+  - visual evoked potentials

@@ -1,0 +1,37 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"0": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/intensity_0)",
+			"1": "Sensory-event, Experimental-stimulus, Visual-presentation, (Label/intensity_1)"
+		}
+	},
+	"Description": "Event annotations for cvep task (0, 1).",
+	"StimulusPresentation": {
+		"display": "Dell P2419HC LCD monitor",
+		"resolution": "1920\u00d71080 pixels",
+		"refresh_rate": "60 Hz",
+		"brightness": "265 cd/m\u00b2",
+		"stimulus_size": "150 pixels",
+		"background_luminance": "124 lux (50% screen luminance)",
+		"on_state_100": "168 lux (100% amplitude depth)",
+		"on_state_40": "142 lux (40% amplitude depth)",
+		"cue_duration": "0.5 s",
+		"stimulation_duration": "2.2 s",
+		"inter_trial_interval": "0.7 s"
+	}
+}
