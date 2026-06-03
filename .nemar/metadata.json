@@ -1,0 +1,115 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "Kalou Cabrera Castillos": {
+      "orcid": "0009-0007-3501-5885"
+    },
+    "Simon Ladouce": {
+      "orcid": "0000-0001-6760-6240"
+    },
+    "Ludovic Darmet": {
+      "orcid": "0000-0001-5445-9763"
+    },
+    "Frédéric Dehais": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.neuroimage.2023.120446",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000346",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000346",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.8255618",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "AID (Powerbrain project), France"
+    },
+    {
+      "funder_name": "AXA Research Fund Chair for Neuroergonomics, France"
+    },
+    {
+      "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
+    },
+    {
+      "funder_name": "AID",
+      "award_title": "Powerbrain project"
+    },
+    {
+      "funder_name": "AXA Research Fund",
+      "award_title": "Chair for Neuroergonomics"
+    },
+    {
+      "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
+      "award_title": "Chair for Neuroadaptive Technology"
+    }
+  ],
+  "title": "CastillosCVEP100",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "155.4 MB (13 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "A 2-class code-VEP brain-computer interface dataset from 12 healthy participants comparing burst c-VEP and m-sequence stimulation paradigms at two amplitude depths (100% and 40%). The study evaluates classification performance and user experience using 32-channel EEG recorded at 500 Hz, with CNN-based decoding achieving up to 95.6% accuracy for burst c-VEP at full amplitude. This derivative dataset optimizes stimulus design for reactive BCI applications while maintaining visual comfort.",
+  "methods_description": "EEG data acquired from 12 healthy participants using a BrainProducts LiveAmp 32-channel system at 500 Hz sampling rate with standard 10-20 montage (reference: FCz, ground: FPz). Participants performed a 2-class visual attention task with four cued targets presented sequentially for 0.5 s, followed by 2.2 s stimulation phase and 0.7 s inter-trial interval. Four experimental conditions tested: burst c-VEP and m-sequence c-VEP, each at 100% and 40% amplitude depth. CNN-based classification employed 250 ms sliding windows with 2 ms stride and standard deviation normalization. Subjective ratings collected for visual comfort, mental tiredness, and intrusiveness.",
+  "keywords": [
+    {
+      "term": "Code-VEP"
+    },
+    {
+      "term": "Brain-computer interfaces"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Visual evoked potentials"
+    },
+    {
+      "term": "Convolutional neural networks"
+    },
+    {
+      "term": "Reactive BCI"
+    },
+    {
+      "term": "Amplitude depth reduction"
+    },
+    {
+      "term": "Visual comfort"
+    },
+    {
+      "term": "Burst c-VEP"
+    },
+    {
+      "term": "M-sequence"
+    }
+  ],
+  "source_hash": "add7e47cc1f763e4a8162e3a960f1f4e298eae00619e3bfd8de86ba24a293403"
+}
