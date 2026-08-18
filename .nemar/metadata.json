@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "CastillosCVEP100",
-  "description": "A code-VEP brain-computer interface dataset from 12 healthy participants comparing burst c-VEP and m-sequence stimulation paradigms at two amplitude depths (100% and 40%). The study evaluates classification performance and user experience using 32-channel EEG recorded at 500 Hz. The dataset includes 2 classification classes with 4 experimental conditions (burst/m-sequence × 100%/40% amplitude). CNN-based decoding achieves up to 95.6% accuracy with full calibration data (52.8s), with typical performance around 85% accuracy. This derivative dataset optimizes stimulus design for reactive BCI applications while maintaining visual comfort.",
-  "methods_description": "EEG data acquired from 12 healthy participants using a BrainProducts LiveAmp 32-channel system at 500 Hz sampling rate with standard 10-20 montage (reference: FCz, ground: FPz). Participants performed a 4-class visual attention task with four cued targets presented sequentially for 0.5 s, followed by 2.2 s stimulation phase. Four experimental conditions tested: burst c-VEP and m-sequence c-VEP, each at 100% and 40% amplitude depth. Data processed with CNN-based classification using 250 ms sliding windows with 2 ms stride and standard deviation normalization. Subjective ratings collected for visual comfort, mental tiredness, and intrusiveness.",
+  "description": "A 4-target, 2-class code-VEP brain-computer interface dataset from 12 healthy participants comparing burst c-VEP and m-sequence stimulation paradigms at two amplitude depths (100% and 40%). The study evaluates classification performance and user experience using 32-channel EEG recorded at 500 Hz. This derivative dataset is derived from the original Castillos et al. (2023) study and optimizes stimulus design for reactive BCI applications while maintaining visual comfort. CNN-based decoding achieved up to 95.6% accuracy (best-case scenario with 52.8 s of calibration data).",
+  "methods_description": "EEG data collected from 12 healthy participants (mean age 30.6±7.1 years) using a BrainProducts LiveAmp 32-channel system at 500 Hz sampling rate with standard 10-20 montage. Factorial experimental design tested four conditions: burst c-VEP and m-sequence c-VEP, each at 100% and 40% amplitude depth. Participants performed a visual attention task focusing on four sequentially cued targets across 15 blocks of 4 trials per condition. CNN-based classification employed 250ms sliding windows with 2ms stride and standard deviation normalization. Subjective ratings assessed visual comfort, mental tiredness, and intrusiveness.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -48,9 +48,6 @@
     },
     {
       "term": "M-sequence"
-    },
-    {
-      "term": "User experience"
     }
   ],
   "related_identifiers": [
@@ -96,10 +93,6 @@
     {
       "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
       "award_title": "Chair for Neuroadaptive Technology"
-    },
-    {
-      "funder_name": "Agence de l'Innovation de Défense (AID)",
-      "award_title": "Powerbrain project"
     }
   ],
   "resource_type_general": "Dataset",
@@ -120,5 +113,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "1d27374e8c6e45dd91c5db2c1aec7fd6cbb6f00775296d7d2ff18958a3ba46d0"
+  "source_hash": "a46e5b43f3f2e665710b7b9980bea4d9194e7fb7d37e5275c3c3d78765a5c8bb"
 }
