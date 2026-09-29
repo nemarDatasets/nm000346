@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "CastillosCVEP100",
-  "description": "A 4-target, 2-class code-VEP brain-computer interface dataset from 12 healthy participants comparing burst c-VEP and m-sequence stimulation paradigms at two amplitude depths (100% and 40%). The study evaluates classification performance and user experience using 32-channel EEG recorded at 500 Hz. This derivative dataset is derived from the original Castillos et al. (2023) study and optimizes stimulus design for reactive BCI applications while maintaining visual comfort. CNN-based decoding achieved up to 95.6% accuracy (best-case scenario with 52.8 s of calibration data).",
-  "methods_description": "EEG data collected from 12 healthy participants (mean age 30.6±7.1 years) using a BrainProducts LiveAmp 32-channel system at 500 Hz sampling rate with standard 10-20 montage. Factorial experimental design tested four conditions: burst c-VEP and m-sequence c-VEP, each at 100% and 40% amplitude depth. Participants performed a visual attention task focusing on four sequentially cued targets across 15 blocks of 4 trials per condition. CNN-based classification employed 250ms sliding windows with 2ms stride and standard deviation normalization. Subjective ratings assessed visual comfort, mental tiredness, and intrusiveness.",
+  "description": "EEG recordings from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) brain-computer interface task. The study compares burst c-VEP and m-sequence stimulation at 100% and 40% amplitude depth, evaluating classification accuracy with a CNN decoder as well as subjective visual comfort. Data were recorded with a 32-channel BrainProducts LiveAmp system at 500 Hz and are distributed in BIDS format via MOABB.",
+  "methods_description": "Factorial design with four conditions (burst or m-sequence code, each at 100% or 40% amplitude depth). Participants attended to four cued targets over 15 blocks of 4 trials per condition, with a 0.5 s cue, 2.2 s stimulation and 0.7 s inter-trial period. EEG was recorded from 32 active electrodes (BrainProducts LiveAmp, 500 Hz), and decoding used a CNN on 250 ms sliding windows. Subjective ratings of comfort, tiredness and intrusiveness were also collected.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,34 +20,29 @@
   },
   "keywords": [
     {
-      "term": "Code-VEP"
-    },
-    {
-      "term": "Brain-Computer Interfaces"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "Visual Evoked Potentials"
+      "term": "code-modulated VEP"
     },
     {
-      "term": "Convolutional Neural Networks"
+      "term": "reactive BCI"
     },
     {
-      "term": "Reactive BCI"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Amplitude depth reduction"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
-      "term": "Visual comfort"
+      "term": "convolutional neural network"
     },
     {
-      "term": "Burst c-VEP"
-    },
-    {
-      "term": "M-sequence"
+      "term": "visual comfort"
     }
   ],
   "related_identifiers": [
@@ -70,6 +65,16 @@
       "identifier": "https://nemar.org/dataset/nm000346",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -83,14 +88,6 @@
       "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
     },
     {
-      "funder_name": "AID",
-      "award_title": "Powerbrain project"
-    },
-    {
-      "funder_name": "AXA Research Fund",
-      "award_title": "Chair for Neuroergonomics"
-    },
-    {
       "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
       "award_title": "Chair for Neuroadaptive Technology"
     }
@@ -101,7 +98,7 @@
     "eeg"
   ],
   "sizes": [
-    "366.8 MB (37 files)"
+    "350 MB (37 files)"
   ],
   "formats": [
     ".bdf",
