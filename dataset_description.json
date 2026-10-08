@@ -1,5 +1,5 @@
 {
-  "Name": "CastillosCVEP100",
+  "Name": "Castillos et al. 2023, m-sequence c-VEP, 100% amplitude depth: Burst c-VEP Based BCI: Optimizing stimulus design for enhanced classification with minimal calibration data and improved user experience",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
