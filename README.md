@@ -1,7 +1,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000346-blue)](https://doi.org/10.82901/nemar.nm000346)
 
-CastillosCVEP100
-================
+Castillos et al. 2023, m-sequence c-VEP, 100% amplitude depth: Burst c-VEP Based BCI: Optimizing stimulus design for enhanced classification with minimal calibration data and improved user experience
+=======================================================================================================================================================================================================
 
 c-VEP and Burst-VEP dataset from Castillos et al. (2023)
 
