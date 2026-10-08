@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "CastillosCVEP100",
-  "description": "EEG recordings from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) brain-computer interface task. The study compares burst c-VEP and m-sequence stimulation at 100% and 40% amplitude depth, evaluating classification accuracy with a CNN decoder as well as subjective visual comfort. Data were recorded with a 32-channel BrainProducts LiveAmp system at 500 Hz and are distributed in BIDS format via MOABB.",
-  "methods_description": "Factorial design with four conditions (burst or m-sequence code, each at 100% or 40% amplitude depth). Participants attended to four cued targets over 15 blocks of 4 trials per condition, with a 0.5 s cue, 2.2 s stimulation and 0.7 s inter-trial period. EEG was recorded from 32 active electrodes (BrainProducts LiveAmp, 500 Hz), and decoding used a CNN on 250 ms sliding windows. Subjective ratings of comfort, tiredness and intrusiveness were also collected.",
+  "title": "Castillos et al. 2023, m-sequence c-VEP, 100% amplitude depth: Burst c-VEP Based BCI: Optimizing stimulus design for enhanced classification with minimal calibration data and improved user experience",
+  "description": "EEG recordings from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) reactive BCI task. The study compares burst c-VEP and m-sequence stimulation at 100% and 40% amplitude depth. This subset contains the m-sequence condition at 100% amplitude depth. The data were recorded with a 32-channel system at 500 Hz and used to evaluate CNN-based classification with minimal calibration data, as well as user experience measures such as visual comfort.",
+  "methods_description": "EEG was recorded with a BrainProducts LiveAmp 32-channel active electrode system at 500 Hz. Participants focused on four targets cued sequentially in random order (0.5 s cue, 2.2 s stimulation, 0.7 s inter-trial interval) across 15 blocks of 4 trials per condition. Stimuli were shown on a 60 Hz LCD monitor. Decoding used a CNN with 250 ms sliding windows, and subjective ratings of comfort, tiredness and intrusiveness were collected.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -26,11 +26,9 @@
       "term": "code-modulated VEP"
     },
     {
-      "term": "reactive BCI"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
@@ -40,6 +38,9 @@
     },
     {
       "term": "convolutional neural network"
+    },
+    {
+      "term": "reactive BCI"
     },
     {
       "term": "visual comfort"
@@ -88,6 +89,14 @@
       "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
     },
     {
+      "funder_name": "AID",
+      "award_title": "Powerbrain project"
+    },
+    {
+      "funder_name": "AXA Research Fund",
+      "award_title": "Chair for Neuroergonomics"
+    },
+    {
       "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
       "award_title": "Chair for Neuroadaptive Technology"
     }
@@ -110,5 +119,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "a46e5b43f3f2e665710b7b9980bea4d9194e7fb7d37e5275c3c3d78765a5c8bb"
+  "source_hash": "cc4f99ad9eea647d498acef96d8f06000ca04adad8a62861de909e828be86b7c"
 }
